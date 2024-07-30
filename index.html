@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing-Table</title>
+  
+  <style>
+    h1{
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 36px;
+      font-weight: bolder;
+      margin-top: 100px;
+      flex: 1;
+    
+      
+      
+    }
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f7f7f7;
+      padding: 0;
+      margin: 0;
+       
+    }
+    
+    .pricing-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 400px;
+      gap: 2rem;
+      
+    }
+   .pricing-table{
+    text-align: center;
+    width: 200px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px;
+    padding: 20px;
+    
+   }
+   .plan-title{
+    font-size: 36px;
+    font-weight: bolder;
+   }
+   .title-description{
+    margin-top: 5px;
+    color: gray;
+   }
+   .price{
+    margin-top: 20px;
+    font-size: 36px;
+    font-weight: bolder;
+   }
+   .price + p{
+    margin-top: -3px;
+    
+   }
+   p{
+    margin-top: 30px;
+   }
+   .get{
+    background-color:#007bff;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+   }
+
+   @media (max-width: 1250px) {
+    .pricing-container {
+    flex-direction: column;
+    height: 100%;
+    
+    }
+    }
+    #purple{
+      background-color:rgb(245, 9, 119);
+      color: #f2f2f2;
+    }
+    div.title-description p {
+      color: #f2f2f2;
+    }
+    
+    
+   
+  </style>
+</head>
+<body>
+  <h1>pricing table</h1>
+    <div  class="pricing-container">
+     <div class="pricing-table">
+        <div class="plan-title">Basic</div>
+        <div class="title-description">Get the party started</div>
+        <div class="price">$35</div>
+        <p >PER MONTH</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        <button class="get">GET STARTED</button>
+
+      </div>
+
+      <div id="purple" class="pricing-table">
+        <div class="plan-title">Business</div>
+        <div class="title-description"><p>Get the party started</p> </div> 
+        <div class="price">$55</div>
+        <p>PER MONTH</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        <button class="get">GET STARTED</button>
+      </div>
+
+
+      <div class="pricing-table">
+        <div class="plan-title">Expert</div>
+        <div class="title-description">Get the party started</div> 
+        <div class="price">$75</div>
+        <p>PER MONTH</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        <button class="get">GET STARTED</button>
+
+      </div>
+
+  </div>
+
+  
+</body>
+</html>
